@@ -1,0 +1,258 @@
+// Contenido en tres idiomas
+const texts = {
+  ca: {
+    headerSubtitle: "Especialista en Economia, Administració i Sistemes Informàtics",
+    contactTitle: "Contacte",
+    languagesTitle: "Idiomes",
+    skillsTitle: "Habilitats",
+    perfilTitle: "Perfil Professional",
+    formacioTitle: "Formació Acadèmica",
+    experienciaTitle: "Experiència Professional",
+    multimediaTitle: "Multimedia",
+    multimediaText: "Vídeo de presentació:",
+    footerMain: "&copy; 2025 Pol Morales Calleja | CV Dissenyat amb HTML5 i CSS3 (Grid/Flexbox)",
+    footerSub: "Aquesta web demostra coneixements de Maquetació Avançada.",
+    perfil: "Professional amb una formació sòlida i multidisciplinària que combina l'anàlisi econòmic de la Universitat Rey Juan Carlos amb el coneixement tècnic de sistemes informàtics (SMIX) i la gestió empresarial (ADE). Busco aportar una visió holística en projectes on la tecnologia i la planificació financera convergeixen.",
+    habilidades: [
+      "Anàlisi d'Estadístiques i Dades",
+      "Comptabilitat i Gestió Financera",
+      "Administració de Sistemes (Linux/Windows)",
+      "Bases de Dades (SQL)",
+      "Gestió de Projectes (ADE)"
+    ],
+    idiomas: [
+      { nombre: "Castellà", nivel: "Natiu", clase: "level-native" },
+      { nombre: "Català", nivel: "Natiu", clase: "level-native" },
+      { nombre: "Anglès", nivel: "B2", clase: "level-b2" },
+      { nombre: "Italià", nivel: "B1", clase: "level-b1" }
+    ],
+    formacion: [
+      {
+        titulo: "Grau en Economia",
+        fechas: "2018 - 2022",
+        desc: "Especialització en Macroeconomia i Econometria. Treball de Fi de Grau sobre models de creixement sostenible."
+        
+      },
+      {
+        titulo: "Grau Superior en Administració i Finances (ADE)",
+        fechas: "2016 - 2018",
+        desc: "Adquisició de coneixements en gestió, fiscalitat i administració d'empreses."
+      },
+      {
+        titulo: "Grau Mitjà en Sistemes Microinformàtics i Xarxes (SMIX)",
+        fechas: "2014 - 2016",
+        desc: "Coneixements fonamentals en muntatge, manteniment i configuració de sistemes informàtics."
+      }
+    ],
+    experiencia: [
+      {
+        puesto: "Analista Financer Junior",
+        fechas: "Set. 2022 - Actualitat",
+        tareas: [
+          "Anàlisi de balanços i projeccions econòmiques per a pimes.",
+          "Desenvolupament de models de risc i viabilitat d'inversions.",
+          "Suport a l'equip d'auditoria."
+        ]
+        
+      }
+    ]
+  },
+
+  es: {
+    headerSubtitle: "Especialista en Economía, Administración y Sistemas Informáticos",
+    contactTitle: "Contacto",
+    languagesTitle: "Idiomas",
+    skillsTitle: "Habilidades",
+    perfilTitle: "Perfil Profesional",
+    formacioTitle: "Formación Académica",
+    experienciaTitle: "Experiencia Profesional",
+    multimediaTitle: "Multimedia",
+    multimediaText: "Vídeo de presentación:",
+    footerMain: "&copy; 2025 Pol Morales Calleja | CV Diseñado con HTML5 y CSS3 (Grid/Flexbox)",
+    footerSub: "Esta web demuestra conocimientos de Maquetación Avanzada.",
+    perfil: "Profesional con formación sólida y multidisciplinaria que combina el análisis económico de la Universitat Rey Juan Carlos con conocimientos técnicos en sistemas informáticos (SMIX) y gestión empresarial (ADE). Busco aportar una visión global en proyectos donde la tecnología y la planificación financiera convergen.",
+    habilidades: [
+      "Análisis de estadísticas y datos",
+      "Contabilidad y gestión financiera",
+      "Administración de sistemas (Linux/Windows)",
+      "Bases de datos (SQL)",
+      "Gestión de proyectos (ADE)"
+    ],
+    idiomas: [
+      { nombre: "Castellano", nivel: "Nativo", clase: "level-native" },
+      { nombre: "Catalán", nivel: "Nativo", clase: "level-native" },
+      { nombre: "Inglés", nivel: "B2", clase: "level-b2" },
+      { nombre: "Italiano", nivel: "B1", clase: "level-b1" }
+    ],
+    formacion: [
+      {
+        titulo: "Grado en Economía",
+        fechas: "2018 - 2022",
+        desc: "Especialización en Macroeconomía y Econometría. Trabajo Fin de Grado sobre modelos de crecimiento sostenible."
+      },
+      {
+        titulo: "Grado Superior en Administración y Finanzas (ADE)",
+        fechas: "2016 - 2018",
+        desc: "Adquisición de conocimientos en gestión, fiscalidad y administración de empresas."
+      },
+      {
+        titulo: "Grado Medio en Sistemas Microinformáticos y Redes (SMIX)",
+        fechas: "2014 - 2016",
+        desc: "Conocimientos fundamentales en montaje, mantenimiento y configuración de sistemas informáticos."
+      }
+    ],
+    experiencia: [
+      {
+        puesto: "Analista Financiero Junior",
+        fechas: "Sept. 2022 - Actualidad",
+        tareas: [
+          "Análisis de balances y proyecciones económicas para pymes.",
+          "Desarrollo de modelos de riesgo y viabilidad de inversiones.",
+          "Soporte al equipo de auditoría."
+        ]
+      }
+    ]
+  },
+
+  en: {
+    headerSubtitle: "Specialist in Economics, Business Administration and IT Systems",
+    contactTitle: "Contact",
+    languagesTitle: "Languages",
+    skillsTitle: "Skills",
+    perfilTitle: "Professional Profile",
+    formacioTitle: "Academic Background",
+    experienciaTitle: "Professional Experience",
+    multimediaTitle: "Multimedia",
+    multimediaText: "Introduction video:",
+    footerMain: "&copy; 2025 Pol Morales Calleja | CV Designed with HTML5 and CSS3 (Grid/Flexbox)",
+    footerSub: "This website demonstrates advanced layout skills.",
+    perfil: "Professional with a solid and multidisciplinary background combining economic analysis from Universitat Rey Juan Carlos with technical knowledge in IT systems (SMIX) and business management (ADE). I aim to provide a holistic vision in projects where technology and financial planning converge.",
+    habilidades: [
+      "Data and statistics analysis",
+      "Accounting and financial management",
+      "System administration (Linux/Windows)",
+      "Databases (SQL)",
+      "Project management (ADE)"
+    ],
+    idiomas: [
+      { nombre: "Spanish", nivel: "Native", clase: "level-native" },
+      { nombre: "Catalan", nivel: "Native", clase: "level-native" },
+      { nombre: "English", nivel: "B2", clase: "level-b2" },
+      { nombre: "Italian", nivel: "B1", clase: "level-b1" }
+    ],
+    formacion: [
+      {
+        titulo: "Bachelor in Economics",
+        fechas: "2018 - 2022",
+        desc: "Specialization in Macroeconomics and Econometrics. Final Degree Project on sustainable growth models."
+      },
+      {
+        titulo: "Higher Degree in Administration and Finance (ADE)",
+        fechas: "2016 - 2018",
+        desc: "Acquisition of knowledge in management, taxation and business administration."
+      },
+      {
+        titulo: "Intermediate Degree in Microcomputer Systems and Networks (SMIX)",
+        fechas: "2014 - 2016",
+        desc: "Basic knowledge in assembly, maintenance and configuration of IT systems."
+      }
+    ],
+    experiencia: [
+      {
+        puesto: "Junior Financial Analyst",
+        fechas: "Sept. 2022 - Present",
+        tareas: [
+          "Analysis of financial statements and projections for SMEs.",
+          "Development of risk and investment feasibility models.",
+          "Support to the audit team."
+        ]
+      }
+    ]
+  }
+};
+
+// Cambiar idioma al hacer click
+document.querySelectorAll('.language-selector img').forEach(flag => {
+  flag.addEventListener('click', () => {
+    const lang = flag.dataset.lang;
+    const data = texts[lang];
+
+    // Header
+    document.getElementById('header-subtitle').textContent = data.headerSubtitle;
+
+    // Títulos de secciones
+    document.getElementById('contact-title').textContent = data.contactTitle;
+    document.getElementById('languages-title').textContent = data.languagesTitle;
+    document.getElementById('skills-title').textContent = data.skillsTitle;
+    document.getElementById('perfil-title').textContent = data.perfilTitle;
+    document.getElementById('formacio-title').textContent = data.formacioTitle;
+    document.getElementById('experiencia-title').textContent = data.experienciaTitle;
+    document.getElementById('multimedia-title').textContent = data.multimediaTitle;
+    document.getElementById('multimedia-text').textContent = data.multimediaText;
+
+    // Footer
+    document.getElementById('footer-main').innerHTML = data.footerMain;
+    document.getElementById('footer-sub').textContent = data.footerSub;
+
+    // Perfil
+    document.getElementById('perfil-text').textContent = data.perfil;
+
+    // Habilidades
+    const skillList = document.getElementById('skills-list');
+    skillList.innerHTML = "";
+    data.habilidades.forEach(h => {
+      const li = document.createElement('li');
+      li.textContent = h;
+      skillList.appendChild(li);
+    });
+
+    // Idiomas
+    const langList = document.getElementById('languages-list');
+    langList.innerHTML = "";
+    data.idiomas.forEach(idi => {
+      const li = document.createElement('li');
+      li.className = "language-item";
+
+      const spanName = document.createElement('span');
+      spanName.className = "lang-name";
+      spanName.textContent = idi.nombre;
+
+      const spanLevel = document.createElement('span');
+      spanLevel.className = "lang-level " + idi.clase;
+      spanLevel.textContent = idi.nivel;
+
+      li.appendChild(spanName);
+      li.appendChild(spanLevel);
+      langList.appendChild(li);
+    });
+
+    // Formación 
+    const formacionSection = document.querySelector('#formacio');
+    const articles = formacionSection.querySelectorAll('.study-entry');
+    data.formacion.forEach((f, i) => {
+      const art = articles[i];
+      art.querySelector('.study-title').textContent = f.titulo;
+      art.querySelector('.study-dates').textContent = f.fechas;
+      art.querySelector('.study-desc').textContent = f.desc;
+      // .study-center NO se toca, se mantiene el centro original
+    });
+
+    // Experiencia 
+    const expSection = document.querySelector('#experiencia');
+    const jobs = expSection.querySelectorAll('.job-entry');
+    data.experiencia.forEach((e, i) => {
+      const job = jobs[i];
+      job.querySelector('.job-title').textContent = e.puesto;
+      job.querySelector('.job-dates').textContent = e.fechas;
+      
+
+      const ul = job.querySelector('.job-tasks');
+      ul.innerHTML = "";
+      e.tareas.forEach(t => {
+        const li = document.createElement('li');
+        li.textContent = t;
+        ul.appendChild(li);
+      });
+    });
+  });
+});
